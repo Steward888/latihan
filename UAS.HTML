@@ -1,11 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Toko Posel</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <div class="container">
+    <!-- Daftar Produk -->
+    <div class="produk-list">
+      <h2>Daftar Produk</h2>
+      
+      <div class="produk" data-qty="0">
+        <p class="nama">Tas (Merah)</p>
+        <div class="kontrol">
+          <button class="kurang">-1</button>
+          <button class="tambah">+1</button>
+        </div>
+        <p>Subtotal: Rp <span class="subtotal">0</span></p>
+      </div>
+
+      <div class="produk" data-qty="0">
+        <p class="nama">Tas (Biru)</p>
+        <div class="kontrol">
+          <button class="kurang">-1</button>
+          <button class="tambah">+1</button>
+        </div>
+        <p>Subtotal: Rp <span class="subtotal">0</span></p>
+      </div>
+
+      <div class="produk" data-qty="0">
+        <p class="nama">Tas (Hijau)</p>
+        <div class="kontrol">
+          <button class="kurang">-1</button>
+          <button class="tambah">+1</button>
+        </div>
+        <p>Subtotal: Rp <span class="subtotal">0</span></p>
+      </div>
+    </div>
+
+    <!-- Form Order -->
+    <div class="order-form">
+      <h2>Order Summary</h2>
+      <label>Nama: <input type="text" id="nama"></label>
+      <label>Email: <input type="email" id="email"></label>
+      <label>Kode Promo: <input type="text" id="promo"></label>
+      <button id="terapkanPromo">Apply</button>
+
+      <div class="total">
+        <p>Total Harga: Rp <span id="totalHarga">0</span></p>
+      </div>
+
+      <button id="checkout">Order & Checkout</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
